@@ -1,2 +1,17 @@
 
 /* Your CSS Code here. */
+.holder {
+  display: flex;
+  justify-content: space-between; /* Distribute items with space between */
+  flex-wrap: wrap;                /* Allow items to wrap onto next line */
+  padding: 0 10px;                /* Optional: to avoid items touching screen edges directly */
+}
+
+.item {
+  flex: 0 1 auto;   /* Do not grow too much, allow shrinking, size based on content */
+  margin: 10px 0;   /* Optional: space between rows */
+  padding: 20px;
+  background-color: #ccc;
+  border: 1px solid #999;
+  text-align: center;
+}
